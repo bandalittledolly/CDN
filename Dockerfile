@@ -1,3 +1,3 @@
-FROM php:apache
-COPY ./ /var/www/html
-EXPOSE 80
+FROM httpd:latest
+COPY ./ /usr/local/apache2/htdocs/
+EXPOSE 8080

@@ -1,3 +1,4 @@
-FROM httpd:latest
-COPY ./ /usr/local/apache2/htdocs/
+FROM nginx
+COPY ./ /usr/share/nginx/html
+COPY default.conf /etc/nginx/conf.d
 EXPOSE 8080
